@@ -1,0 +1,37 @@
+﻿@model IEnumerable<CargoExpress.Models.Client>
+@{
+    ViewData["Title"] = "Інформація про клієнтів";
+}
+
+    
+<table class="table">
+    <tr>
+        <td>Ім'я</td>
+        <td>Прізвище</td>
+        <td>Номер</td>
+        <td>Місце відправлення</td>
+        <td>Місце прибуття</td>
+        <td>Вага</td>
+        <td>Ціна вантажу</td>
+    </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Surname</td>
+                <td>@item.PhoneNumber</td>
+                <td>@item.PlaceStart</td>
+                <td>@item.PlaceEnd</td>
+                <td>@item.Weight</td>
+                <td>@item.Price</td>
+                <td>
+                    <a asp-action="delete" asp-controller="home" asp-route-id="@item.Id">Удалить</a>
+                </td>
+            </tr>
+        }
+
+       
+    </table>
+
+
+

@@ -1,0 +1,198 @@
+﻿
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    color: #222;
+}
+
+
+.navbar-brand img  {
+    width: 100px;
+}
+
+.navbar-nav li {
+    padding-right: 20px;
+}
+
+
+
+.nav-link {
+    font-size: 1.1em !important;
+}
+
+.buttond {
+    
+    right: 0;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 4px 17px;
+    color: #f0f0f0;
+    background-color: #f23c0a;
+    border-radius: 22px;
+    border: 0px solid #5bd99a;
+    text-align: center;
+}
+
+.carousel-inner {
+    height: 500px;
+    
+}
+
+.carousel-inner img{
+    height: 100%;
+}
+
+@media (min-width: 1100px){
+    .carousel-inner img {
+        width: 100%;
+    }
+}
+
+ul.hr{
+    padding-left: 250px;
+}
+
+ul.hr li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 150px;
+}
+
+#PriceBtn{
+    padding: 20px;
+    height: 70px;
+    width: 200px;
+    font-style: normal;
+    font-weight: 900;
+    color: #808080;
+    font-size: 14px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 1px solid #808080; /* Рамка вокруг текста */
+}
+#imgPrice {
+    height: 30px;
+    width: 30px;
+}
+
+#WayBtn {
+    padding: 20px;
+    height: 70px;
+    width: 200px;
+    font-style: normal;
+    font-weight: 900;
+    color: #808080;
+    font-size: 14px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 1px solid #808080; /* Рамка вокруг текста */
+}
+#imgWay {
+    height: 25px;
+    width: 25px;
+}
+
+#DecorBtn {
+    padding: 20px;
+    height: 70px;
+    width: 200px;
+    font-style: normal;
+    font-weight: 900;
+    color: #808080;
+    font-size: 14px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 1px solid #808080; /* Рамка вокруг текста */
+}
+#imgBox {
+    height: 25px;
+    width: 25px;
+}
+
+.inline li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 20px;
+    padding-left: 25px;
+}
+
+#imgInfo{
+    width: 300px;
+    height: 200px;
+}
+
+#number{
+    font-style: normal;
+    font-weight:700;
+    color: darkgrey;
+}
+#text{
+    font-size:10px;
+    color:gray;
+    
+}
+
+
+
+
+#textOnImage {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    color: #f0f0f0;
+    font-size:20px;
+}
+
+#listValues {
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    padding: 10px 10px;
+    display: block;
+    color: #050e44;
+}
+
+#textCon {
+    font-size: 18px;
+    font-style: normal;
+    color:#050e44;
+    padding: 5px 3px;
+}
+
+#contH2 {
+   font-style: normal;
+   color:orangered;
+}
+
+#imageAbout{
+    width: 100%;
+}
+
+
+#textSt {
+    font-size: 12px;
+    font-style: normal;
+    color: #050e44;
+}
+
+#textCon1 {
+    font-size: 12px;
+    font-style: normal;
+    color: #050e44;
+    padding: 5px ;
+}
+#textCon2 {
+    font-style: normal;
+    color: #050e44;
+}
+
+#map{
+    width:100%;
+    height:570px;
+}
+
+#Thank{
+    font-size:18px;
+    color: orangered;
+}

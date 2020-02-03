@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Відділення";
+}
+
+<h2 id="textCon2">Наше місцезнаходження</h2>
+
+<div id="map">
+
+</div>
+<script>
+    function initMap() {
+        var centMap = {
+            lat: 49.320398,
+            lng: 31.948814
+        };
+        var map = new google.maps.Map(
+            document.getElementById('map'),
+            {
+                zoom: 5, center: centMap
+            });
+        var marker = new google.maps.Marker(
+            {
+                position: {lat:47.9002002 , lng:34.4068883},
+                map: map
+            });
+        var marker = new google.maps.Marker(
+            {
+                position: {lat:50.6111564 , lng:26.1745434},
+                map: map
+            });
+        var marker = new google.maps.Marker(
+            {
+                position: {lat:48.3777915 , lng:26.4392562},
+                map: map
+            });
+         var marker = new google.maps.Marker(
+            {
+                position: {lat:49.0663094 , lng:28.5179312},
+                map: map
+             });
+         var marker = new google.maps.Marker(
+            {
+                position: {lat:50.4021368 , lng:30.2525075},
+                map: map
+             });
+         var marker = new google.maps.Marker(
+            {
+                position: {lat:50.9007528 , lng:34.7441741},
+                map: map
+             });
+        var marker = new google.maps.Marker(
+            {
+                position: {lat:49.9947277 , lng:36.1457409},
+                map: map
+            });
+        var marker = new google.maps.Marker(
+            {
+                position: {lat:48.9715077 , lng:37.8248145},
+                map: map
+            });
+        var marker = new google.maps.Marker(
+            {
+                position: {lat:48.518858 , lng:32.145623},
+                map: map
+            });
+    }
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?&callback=initMap">
+</script>

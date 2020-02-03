@@ -1,0 +1,53 @@
+﻿@model CargoExpress.Models.Client
+@{
+        ViewData["Title"] = "Удаление пользователя";
+
+}
+
+    <div>
+        <dl class="dl-horizontal">
+            <dt>Ім'я</dt>
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+            <dt>Прізвище</dt>
+            <dd>
+                @Html.DisplayFor(model => model.Surname)
+            </dd>
+
+            <dt>Номер</dt>
+            <dd>
+                @Html.DisplayFor(model => model.PhoneNumber)
+            </dd>
+
+            <dt>Місце відправлення</dt>
+            <dd>
+                @Html.DisplayFor(model => model.PlaceStart)
+            </dd>
+
+            <dt>Місце прибуття</dt>
+            <dd>
+                @Html.DisplayFor(model => model.PlaceEnd)
+            </dd>
+
+            <dt>Вага</dt>
+            <dd>
+                @Html.DisplayFor(model => model.Weight)
+            </dd>
+
+            <dt>Ціна вантажу</dt>
+            <dd>
+                @Html.DisplayFor(model => model.Price)
+            </dd>
+        </dl>
+
+        <div>
+            <form asp-controller="Home" asp-action="Delete" method="post">
+                <div class="form-group">
+                    <input type="submit" class="btn btn-default" value="Удалить" />
+                </div>
+            </form>
+        </div>
+
+    </div>

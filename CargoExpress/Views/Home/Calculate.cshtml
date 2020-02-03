@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewData["Title"] = "Вартість доставки";
+}
+
+<form name="calculate">
+    <div class="jumbotron">
+        <div class="form-group row">
+            <p class="col-sm-5" align="right">Вага вантажу</p>
+            <div class="col-sm-3">
+                <input class="form-control" name="WeightCargo" type="text" placeholder="кг" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <p class="col-sm-5" align="right">Вартість вантажу</p>
+            <div class="col-sm-3">
+                <input class="form-control" name="PriceCargo" type="text" placeholder="грн" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <p class="col-sm-6" align="right">
+                <input id="Radio1" type="radio" name="check" />
+            </p>
+            <div class="col-sm-5" align="left">
+                Адресний забір або доставка, 15 грн
+            </div>
+        </div>
+        <div class="form-group row">
+            <p class="col-sm-6" align="right">
+                <input id="Radio2" type="radio" name="check" />
+            </p>
+            <div class="col-sm-5" align="left">
+                Адресний забір і доставка, 30 грн
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <p class="col-sm-5" align="right" id="result"></p>
+            <div class="col-sm-3">
+                <div id="result1"></div>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <button onclick="calc(); return false;" class="btn btn-primary mx-auto">Розрахувати</button>
+        </div>
+    </div>
+
+</form>
+
+
+
+

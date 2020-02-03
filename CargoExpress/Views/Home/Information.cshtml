@@ -1,0 +1,25 @@
+﻿@model CargoExpress.Models.EnterAdmin
+@{
+    ViewData["Title"] = "Вхід до кабінету адміністратора";
+}
+
+
+    <form asp-action="information" asp-controller="home" method="post">
+        <h3>Вхід до кабінету адміністратора сайту</h3>
+        <div class="form-group row m-md-3">
+            <label asp-for="Admin" align="right" class="col-sm-4  col-form-label">Ім'я</label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" asp-for="Admin" placeholder="Ім'я" required/>
+            </div>
+        </div>
+        <div class="form-group row m-md-3">
+            <label asp-for="Password" align="right" class="col-sm-4  col-form-label">Пароль</label>
+            <div class="col-md-4">
+                <input type="password" class="form-control" asp-for="Password" placeholder="Пароль" required/>
+            </div>
+
+        </div>
+        <div class="form-group row">
+            <input type="submit" value="Ввійти" class="btn btn-danger mx-auto" />
+        </div>
+    </form>
